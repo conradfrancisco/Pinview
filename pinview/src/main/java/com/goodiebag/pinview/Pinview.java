@@ -308,7 +308,7 @@ public class Pinview extends LinearLayout implements TextWatcher, View.OnFocusCh
      *
      * @param value
      */
-    public void setValue(@NonNull String value) {
+    public void setValue(String value) {
         String regex = "[0-9]*"; // Allow empty string to clear the fields
         fromSetValue = true;
         if (inputType == InputType.NUMBER && !value.matches(regex))
